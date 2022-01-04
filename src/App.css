@@ -1,38 +1,50 @@
+*,
+*::before *::after {
+  box-sizing: border-box;
+}
+
+/* Custom Properties */
+:root {
+  --font-primary: "Source Sans Pro", sans-serif;
+  --font-secondary: "Open Sans", sans-serif;
+
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+  --colour-light: #fff;
+  --colour-dark: #1e1e1f;
+  --colour-accent: #d1d3d5;
+
+  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+}
+
+/* General styles */
+body {
+  background: var(--colour-light);
+  color: var(--colour-dark);
+  margin: 0;
+  font-family: var(--font-primary);
+}
+
+/* Sticky, but not fixed footer */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.App {
+  flex: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer {
+  flex-shrink: 0;
 }
