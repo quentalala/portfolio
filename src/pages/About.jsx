@@ -3,7 +3,15 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <div>This is the about page</div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <div style={{ margin: "3rem" }}>This is the about page</div>
+      </div>
     </>
   );
 };

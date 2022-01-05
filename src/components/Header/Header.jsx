@@ -10,17 +10,20 @@ const Header = () => {
           className="header-wrap"
           style={{ display: "flex", justifyContent: "space-between" }}
         >
-          <Link to="/">
+          <Link to="/" style={{ textDecoration: "none", color: "#1e1e1f" }}>
             <div className="header-left" style={{ margin: "1rem" }}>
               Logo
             </div>
           </Link>
           <div className="header-right">
             <div className="nav-wrap" style={{ display: "flex" }}>
-              <Link to="/">
+              <Link to="/" style={{ textDecoration: "none", color: "#1e1e1f" }}>
                 <div className="nav-item">Projects</div>
               </Link>
-              <Link to="/about">
+              <Link
+                to="/about"
+                style={{ textDecoration: "none", color: "#1e1e1f" }}
+              >
                 <div className="nav-item">About</div>
               </Link>
               <div className="nav-item">Resume</div>
