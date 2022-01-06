@@ -62,6 +62,7 @@ const Home = () => {
                     src={process.env.PUBLIC_URL + "/images/ifihadone.jpg"}
                     alt=""
                   />
+                  <div className="overlay overlaid"></div>
                 </div>
               </div>
             </Grid>
@@ -79,6 +80,7 @@ const Home = () => {
                     src={process.env.PUBLIC_URL + "/images/ifihadone.jpg"}
                     alt=""
                   />
+                  <div className="overlay overlaid"></div>
                 </div>
               </div>
             </Grid>
@@ -96,6 +98,7 @@ const Home = () => {
                     src={process.env.PUBLIC_URL + "/images/ifihadone.jpg"}
                     alt=""
                   />
+                  <div className="overlay overlaid"></div>
                 </div>
               </div>
             </Grid>
@@ -113,6 +116,7 @@ const Home = () => {
                     src={process.env.PUBLIC_URL + "/images/ifihadone.jpg"}
                     alt=""
                   />
+                  <div className="overlay overlaid"></div>
                 </div>
               </div>
             </Grid>
