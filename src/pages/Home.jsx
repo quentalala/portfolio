@@ -13,22 +13,108 @@ const Home = () => {
           alignItems: "center",
         }}
       >
-        <div>
-          <div style={{ margin: "3rem" }}>This is the homepage</div>
-        </div>
-        <div className="projects-wrap">
-          <Grid container spacing={5}>
-            <Grid item xs={12} sm={6} md={6} xl={6}>
-              <div className="project-container">Project</div>
+        <Grid container>
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={12}
+            xl={12}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            <div
+              style={{
+                margin: "3rem",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                flexDirection: "column",
+              }}
+            >
+              <h1>Hey, I'm Quentin</h1>
+              <h2>Thanks for visiting my portfolio!</h2>
+            </div>
+          </Grid>
+        </Grid>
+        <div
+          className="projects-wrap"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginBottom: "6rem",
+          }}
+        >
+          <Grid container spacing={5} justifyContent={"center"}>
+            <Grid
+              item
+              xs={12}
+              sm={6}
+              md={6}
+              xl={6}
+              style={{ display: "flex", justifyContent: "flex-end" }}
+            >
+              <div className="project-container">
+                <div className="project-img-wrap">
+                  <img
+                    src={process.env.PUBLIC_URL + "/images/ifihadone.jpg"}
+                    alt=""
+                  />
+                </div>
+              </div>
             </Grid>
-            <Grid item xs={12} sm={6} md={6} xl={6}>
-              <div className="project-container">Project</div>
+            <Grid
+              item
+              xs={12}
+              sm={6}
+              md={6}
+              xl={6}
+              style={{ display: "flex", justifyContent: "flex-start" }}
+            >
+              <div className="project-container">
+                <div className="project-img-wrap">
+                  <img
+                    src={process.env.PUBLIC_URL + "/images/ifihadone.jpg"}
+                    alt=""
+                  />
+                </div>
+              </div>
             </Grid>
-            <Grid item xs={12} sm={6} md={6} xl={6}>
-              <div className="project-container">Project</div>
+            <Grid
+              item
+              xs={12}
+              sm={6}
+              md={6}
+              xl={6}
+              style={{ display: "flex", justifyContent: "flex-end" }}
+            >
+              <div className="project-container">
+                <div className="project-img-wrap">
+                  <img
+                    src={process.env.PUBLIC_URL + "/images/ifihadone.jpg"}
+                    alt=""
+                  />
+                </div>
+              </div>
             </Grid>
-            <Grid item xs={12} sm={6} md={6} xl={6}>
-              <div className="project-container">Project</div>
+            <Grid
+              item
+              xs={12}
+              sm={6}
+              md={6}
+              xl={6}
+              style={{ display: "flex", justifyContent: "flex-start" }}
+            >
+              <div className="project-container">
+                <div className="project-img-wrap">
+                  <img
+                    src={process.env.PUBLIC_URL + "/images/ifihadone.jpg"}
+                    alt=""
+                  />
+                </div>
+              </div>
             </Grid>
           </Grid>
         </div>
