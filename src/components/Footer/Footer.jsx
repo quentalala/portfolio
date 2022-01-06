@@ -5,7 +5,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer className="footer">
-      <div>I'm the footer</div>
+      <div>Made by quentalala</div>
     </footer>
   );
 };

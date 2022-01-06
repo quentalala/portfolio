@@ -11,7 +11,10 @@ const Header = () => {
           style={{ display: "flex", justifyContent: "space-between" }}
         >
           <Link to="/" style={{ textDecoration: "none", color: "#1e1e1f" }}>
-            <div className="header-left" style={{ margin: "1rem" }}>
+            <div
+              className="header-left"
+              style={{ margin: "3rem 0.5rem 3rem 3rem" }}
+            >
               Logo
             </div>
           </Link>

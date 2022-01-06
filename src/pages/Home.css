@@ -13,20 +13,16 @@
   max-height: 100%;
   max-width: 100%;
   border-radius: 5%;
-  /* cursor: pointer; */
-  /* redundant^ if overlay also has the same styling */
 }
 
 .overlay {
   position: absolute;
   transition: all 0.5s ease;
   opacity: 0;
-  /* background-color: #1b1b1b; */
-  /* redundant^ if overlaid also has the same styling */
 }
 
 .project-img-wrap:hover .overlay {
-  opacity: 0.5;
+  opacity: 0.85;
   cursor: pointer;
 }
 
@@ -35,6 +31,19 @@
   width: 100%;
   top: 0;
   left: 0;
-  background-color: #1b1b1b;
+  background-color: #2e2e2e;
   border-radius: 5%;
+}
+
+.overlaid-text {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 500;
+  font-size: 4rem;
+  margin: 0;
+  opacity: 1;
 }
