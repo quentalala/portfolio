@@ -35,6 +35,9 @@ const Home = () => {
               }}
             >
               <h1>Hey, I'm Quentin</h1>
+              <h2 style={{ margin: "1rem 0rem 0rem" }}>
+                Currently learning about Web Dev and UX
+              </h2>
               <h2>Thanks for visiting my portfolio!</h2>
             </div>
           </Grid>

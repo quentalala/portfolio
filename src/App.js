@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/Footer/Footer";
@@ -6,6 +7,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 
 function App() {
+  const [page, setPage] = useState("Home");
+
   return (
     <>
       <Router>
