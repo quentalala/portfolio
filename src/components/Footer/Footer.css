@@ -3,3 +3,8 @@
   padding: 3rem;
   /* border-top: 1px solid lightgray; */
 }
+
+.socials {
+  margin: 0 1rem 0;
+  cursor: pointer;
+}
