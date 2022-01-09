@@ -30,7 +30,12 @@ const Header = () => {
                 <div className="nav-item">About</div>
               </Link>
               <div className="nav-item">Resume</div>
-              <div className="nav-item">Contact</div>
+              <Link
+                to="/contact"
+                style={{ textDecoration: "none", color: "#1e1e1f" }}
+              >
+                <div className="nav-item">Contact</div>
+              </Link>
             </div>
           </div>
         </div>
