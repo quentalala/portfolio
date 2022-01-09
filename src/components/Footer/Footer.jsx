@@ -16,13 +16,28 @@ const Footer = () => {
           }}
         >
           <li className="socials">
-            <i className="fab fa-linkedin-in"></i>
+            <a
+              href="https://www.linkedin.com/in/quentin-chin-6284b210a/"
+              style={{ color: "#1e1e1f" }}
+            >
+              <div className="fab fa-linkedin-in"></div>
+            </a>
           </li>
           <li className="socials">
-            <i className="fab fa-github"></i>
+            <a
+              href="https://github.com/quentalala"
+              style={{ color: "#1e1e1f" }}
+            >
+              <div className="fab fa-github"></div>
+            </a>
           </li>
           <li className="socials">
-            <i className="far fa-thumbs-up"></i>
+            <a
+              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              style={{ color: "#1e1e1f" }}
+            >
+              <div className="far fa-thumbs-up"></div>
+            </a>
           </li>
         </ul>
       </div>
