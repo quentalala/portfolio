@@ -5,24 +5,21 @@ const About = () => {
   return (
     <>
       <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
+      // style={{
+      //   display: "flex",
+      //   justifyContent: "center",
+      //   alignItems: "center",
+      // }}
       >
-        {/* <div style={{ margin: "3rem" }}>This is the about page</div> */}
         <Grid container>
           <Grid
             item
             xs={12}
-            sm={6}
+            sm={12}
             md={6}
             xl={6}
-            style={{
-              display: "flex",
-              justifyContent: "flex-end",
-            }}
+            display={"flex"}
+            justifyContent={{ xs: "center", md: "flex-end" }}
           >
             <div
               style={{
@@ -32,7 +29,7 @@ const About = () => {
                 margin: "3rem",
               }}
             >
-              <div style={{ height: "600px", width: "auto" }}>
+              <div style={{ height: "600px", width: "max-content" }}>
                 <img
                   src={process.env.PUBLIC_URL + "/images/IMG_1006.jpg"}
                   alt="pic here"
@@ -48,12 +45,17 @@ const About = () => {
           <Grid
             item
             xs={12}
-            sm={6}
+            sm={12}
             md={6}
             xl={6}
-            style={{ display: "flex", justifyContent: "flex-start" }}
+            display={"flex"}
+            justifyContent={{ xs: "center", md: "flex-start" }}
           >
-            <div style={{ margin: "3rem" }}>
+            <div
+              style={{
+                margin: "3rem",
+              }}
+            >
               <div
                 style={{
                   display: "flex",
@@ -62,7 +64,7 @@ const About = () => {
                   alignItems: "center",
                   border: "1px solid lightgray",
                   height: "600px",
-                  width: "450px",
+                  width: "420px",
                   borderRadius: "5%",
                 }}
               >

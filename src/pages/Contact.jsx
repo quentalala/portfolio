@@ -2,6 +2,10 @@ import React, { useState, useRef } from "react";
 import { Grid } from "@mui/material";
 import emailjs from "@emailjs/browser";
 
+const Result = () => {
+  return <div>Message has been sent, I will contact you soon</div>;
+};
+
 const Contact = () => {
   const [result, setResult] = useState(false);
 
@@ -57,11 +61,7 @@ const Contact = () => {
                 <textarea name="message"></textarea>
               </div>
               <button>Submit</button>
-              <div>
-                {result && (
-                  <div>Message has been sent, I will contact you soon</div>
-                )}
-              </div>
+              <div>{result && <Result />}</div>
             </form>
           </div>
         </div>
