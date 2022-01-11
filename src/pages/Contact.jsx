@@ -3,12 +3,15 @@ import { Grid } from "@mui/material";
 import emailjs from "@emailjs/browser";
 
 const Result = () => {
-  return <div>Message has been sent, I will contact you soon</div>;
+  return (
+    <div>
+      Message has been sent, I will contact you once I have read your message :)
+    </div>
+  );
 };
 
 const Contact = () => {
   const [result, setResult] = useState(false);
-
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -29,10 +32,10 @@ const Contact = () => {
           console.log(error.text);
         }
       );
-    // e.target.reset;
     setResult(true);
   };
 
+  //   Email sent notification disappears after 10 seconds
   setTimeout(() => {
     setResult(false);
   }, 10000);
@@ -48,10 +51,7 @@ const Contact = () => {
                 <h3>Name</h3>
                 <input type="text" name="name" required />
               </div>
-              <div>
-                <h3>Number</h3>
-                <input type="text" name="phone" required />
-              </div>
+
               <div>
                 <h3>Email</h3>
                 <input type="text" name="email" required />
