@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import { Grid } from "@mui/material";
 import emailjs from "@emailjs/browser";
+import "./Contact.css";
 
 const Result = () => {
   return (
@@ -94,6 +95,7 @@ const Contact = () => {
                     padding: "1rem",
                     boxShadow: "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px",
                     border: "none",
+                    borderRadius: "5px",
                   }}
                 />
                 <input
@@ -107,6 +109,7 @@ const Contact = () => {
                     padding: "1rem",
                     boxShadow: "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px",
                     border: "none",
+                    borderRadius: "5px",
                   }}
                 />
                 <textarea
@@ -119,10 +122,25 @@ const Contact = () => {
                     boxShadow: "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px",
                     border: "none",
                     fontFamily: "Source Sans Pro, sans-serif",
+                    borderRadius: "5px",
                   }}
                 ></textarea>
+                <button
+                  className="email-btn"
+                  style={{
+                    width: "auto",
+                    margin: "1rem 0 1rem",
+                    padding: "1rem",
+                    boxShadow: "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px",
+                    border: "none",
+                    borderRadius: "5px",
+                    cursor: "pointer",
+                    fontWeight: "bold",
+                  }}
+                >
+                  Send Email
+                </button>
               </div>
-              <button>Submit</button>
               <div>{result && <Result />}</div>
             </form>
           </div>
