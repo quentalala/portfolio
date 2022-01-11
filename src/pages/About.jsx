@@ -4,13 +4,7 @@ import { Grid } from "@mui/material";
 const About = () => {
   return (
     <>
-      <div
-      // style={{
-      //   display: "flex",
-      //   justifyContent: "center",
-      //   alignItems: "center",
-      // }}
-      >
+      <div>
         <Grid container>
           <Grid
             item
