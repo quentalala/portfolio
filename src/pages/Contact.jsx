@@ -3,10 +3,34 @@ import { Grid } from "@mui/material";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
 
+// Result component temporarily shows up after contact email has been sent
 const Result = () => {
   return (
-    <div>
-      Message has been sent, I will contact you once I have read your message :)
+    <div
+      style={{
+        margin: "1rem 0 1rem",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+      }}
+    >
+      <p
+        style={{
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        Message has been sent, I will contact you once I have read your message
+        :)
+      </p>
+      <p
+        style={{
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        The notification above will disappear in 10 seconds!
+      </p>
     </div>
   );
 };
@@ -140,8 +164,8 @@ const Contact = () => {
                 >
                   Send Email
                 </button>
+                <div>{result && <Result />}</div>
               </div>
-              <div>{result && <Result />}</div>
             </form>
           </div>
         </div>
