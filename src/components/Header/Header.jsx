@@ -13,9 +13,20 @@ const Header = () => {
           <Link to="/" style={{ textDecoration: "none", color: "#1e1e1f" }}>
             <div
               className="header-left"
-              style={{ margin: "3rem 0.5rem 3rem 3rem" }}
+              style={{
+                margin: "3rem 0.5rem 3rem 3rem",
+                widht: "1rem",
+                height: "1rem",
+              }}
             >
-              Logo
+              <img
+                src={process.env.PUBLIC_URL + "/images/smiley.png"}
+                alt="logo"
+                style={{
+                  maxHeight: "100%",
+                  maxWidth: "100%",
+                }}
+              />
             </div>
           </Link>
           <div className="header-right">
