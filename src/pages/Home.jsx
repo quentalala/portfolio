@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid } from "@mui/material";
 import "./Home.css";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -59,17 +60,22 @@ const Home = () => {
               xl={6}
               style={{ display: "flex", justifyContent: "flex-end" }}
             >
-              <div className="project-container">
-                <div className="project-img-wrap">
-                  <img
-                    src={process.env.PUBLIC_URL + "/images/ifihadone.jpg"}
-                    alt=""
-                  />
-                  <div className="overlay overlaid">
-                    <h2 className="overlaid-text">Project 1</h2>
+              <Link
+                to="/product"
+                style={{ textDecoration: "none", color: "#1e1e1f" }}
+              >
+                <div className="project-container">
+                  <div className="project-img-wrap">
+                    <img
+                      src={process.env.PUBLIC_URL + "/images/ifihadone.jpg"}
+                      alt=""
+                    />
+                    <div className="overlay overlaid">
+                      <h2 className="overlaid-text">Project 1</h2>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </Grid>
             <Grid
               item
