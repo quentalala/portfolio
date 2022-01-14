@@ -17,7 +17,7 @@ const Footer = () => {
         >
           <li className="socials">
             <a
-              href="https://www.linkedin.com/in/quentin-chin-6284b210a/"
+              href="https://www.linkedin.com/in/quentin-chin"
               style={{ color: "#1e1e1f" }}
             >
               <div className="fab fa-linkedin-in"></div>
