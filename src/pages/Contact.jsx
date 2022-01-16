@@ -29,7 +29,7 @@ const Result = () => {
           justifyContent: "center",
         }}
       >
-        The notification above will disappear in 10 seconds!
+        The notification above will disappear in 30 seconds!
       </p>
     </div>
   );
@@ -60,10 +60,10 @@ const Contact = () => {
     setResult(true);
   };
 
-  //   Email sent notification disappears after 10 seconds
+  //   Email sent notification disappears after 30 seconds
   setTimeout(() => {
     setResult(false);
-  }, 10000);
+  }, 30000);
 
   return (
     <Grid container>
