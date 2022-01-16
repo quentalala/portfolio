@@ -18,9 +18,6 @@ const Home = () => {
           <Grid
             item
             xs={12}
-            sm={12}
-            md={12}
-            xl={12}
             style={{
               display: "flex",
               justifyContent: "center",
@@ -56,8 +53,6 @@ const Home = () => {
               item
               xs={12}
               sm={6}
-              md={6}
-              xl={6}
               style={{ display: "flex", justifyContent: "flex-end" }}
             >
               <Link
@@ -81,8 +76,6 @@ const Home = () => {
               item
               xs={12}
               sm={6}
-              md={6}
-              xl={6}
               style={{ display: "flex", justifyContent: "flex-start" }}
             >
               <div className="project-container">
@@ -102,8 +95,6 @@ const Home = () => {
               item
               xs={12}
               sm={6}
-              md={6}
-              xl={6}
               style={{ display: "flex", justifyContent: "flex-end" }}
             >
               <div className="project-container">
@@ -123,8 +114,6 @@ const Home = () => {
               item
               xs={12}
               sm={6}
-              md={6}
-              xl={6}
               style={{ display: "flex", justifyContent: "flex-start" }}
             >
               <div className="project-container">
